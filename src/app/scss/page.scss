@@ -123,8 +123,8 @@ a.secondary {
 }
 
 @media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+  .page-logo {
+    filter: invert(1);
   }
 
   .page {

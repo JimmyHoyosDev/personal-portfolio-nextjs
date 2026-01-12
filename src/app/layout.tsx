@@ -1,6 +1,12 @@
+// Types
 import type { Metadata } from "next";
+
+// Imports
+import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+
+// Styles
+import "./scss/globals.scss";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +31,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <header>
+          <Image
+              className="header__logo"
+              src="/next.svg"
+              alt="Next.js logo"
+              width={100}
+              height={20}
+              priority
+          />
+      </header>
         {children}
       </body>
     </html>

@@ -4,6 +4,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  header {
+    .logo {
+      filter: invert(1);
+    }
+  }
+
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -38,5 +44,15 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+header {
+  padding: 1rem;
+
+  @media (prefers-color-scheme: dark) {
+    .header__logo {
+      filter: invert(1);
+    }
   }
 }
