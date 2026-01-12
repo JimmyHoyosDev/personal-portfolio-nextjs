@@ -31,16 +31,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <header>
+        <header>
           <Image
-              className="header__logo"
-              src="/next.svg"
-              alt="Next.js logo"
-              width={100}
-              height={20}
-              priority
+            className="header__logo"
+            src="/next.svg"
+            alt="Next.js logo"
+            width={100}
+            height={20}
+            priority
           />
-      </header>
+        </header>
         {children}
       </body>
     </html>
