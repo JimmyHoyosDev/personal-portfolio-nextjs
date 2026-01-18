@@ -6,17 +6,12 @@ import "primeicons/primeicons.css";
 import type { Metadata } from "next";
 
 // Imports
-import { Geist, Geist_Mono } from "next/font/google";
+import { Stick_No_Bills } from "next/font/google";
 import { PrimeReactProvider } from "primereact/api";
 import { Menubar } from "primereact/menubar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const stickNoBills = Stick_No_Bills({
+  variable: "--font-stick-no-bills",
   subsets: ["latin"],
 });
 
@@ -45,7 +40,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${stickNoBills.variable}`}>
         <header>
           <Menubar model={menuItems} />
         </header>
